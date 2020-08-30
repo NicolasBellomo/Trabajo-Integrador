@@ -1,7 +1,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: url(../Imagenes/popcorn.jpg) no-repeat;
-    background-size: cover
+    background-image: url(../Imagenes/popcorn.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 
 #container{
