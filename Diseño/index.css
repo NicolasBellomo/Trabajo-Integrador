@@ -56,3 +56,17 @@ form {
 #piedep {
     text-align: center;
 }
+div.vistas img{
+    width: 250px; height: 250px;
+    padding: 10px; justify-items: horizontal ;
+}
+div.nuevas img{
+    width: 250px; height: 250px;
+    padding: 10px; justify-items: horizontal ;
+    
+}
+div.tendencias img{
+    width: 250px; height: 250px;
+    padding: 10px; justify-items: horizontal ;
+} 
+
