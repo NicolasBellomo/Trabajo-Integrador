@@ -35,24 +35,6 @@ form {
     text-align: center;
 }
 
-/*
-.derecha  {
-    color: black;
-    text-align: right
-    padding: 15px 20px;
-    text-decoration: black;
-}
-
-.izquierda{
-    text-align: left;
-}
-*/
-
-/*.dis {
-    background-color:rgb(94, 9, 9);
-    text-decoration: white;
-}*/
-
 .misma{
     display: flex;  
     flex-direction: row;
@@ -129,3 +111,4 @@ div.tendencias img{
     text-align: center;
     padding: 5px;
 }
+
