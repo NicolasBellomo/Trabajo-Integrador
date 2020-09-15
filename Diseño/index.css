@@ -65,8 +65,8 @@ h1, h2, h3{
     justify-content: center;
     align-items: center;
     border: 1px solid greenyellow;
-    height: 30vw;
-    margin-bottom: 70px;
+    height: 55vw;
+    margin-bottom: 150px;
 }
 .pelis{
     padding: 20px;
@@ -129,5 +129,4 @@ div.tendencias img{
     text-align: center;
     padding: 5px;
 }
-
 
