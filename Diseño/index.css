@@ -130,3 +130,10 @@ div.tendencias img{
     padding: 5px;
 }
 
+.zoom{
+    transition: transform .5s;
+}
+
+.zoom:hover{
+    transform: scale(1.5);
+}
