@@ -5,6 +5,7 @@ body{
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-size: contain;
+    border-bottom: black 1px solid;
     
 }
 
@@ -80,6 +81,7 @@ h1, h2, h3{
 #piedep {
     text-align: center;
     text-decoration-color: beige;
+    border-top: 1px solid black;
 }
 div.vistas img{
     width: 250px; height: 250px;
