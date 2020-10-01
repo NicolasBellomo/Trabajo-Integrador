@@ -29,7 +29,7 @@ ul li{
     font-size: 13px;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     color: ivory;
 }
 h2{
@@ -89,9 +89,16 @@ h2{
 #base{
     display: flex;
     justify-content: center;
-    margin-top: 15vw;
+    margin-top: 14vw;
+    
 }
 .review{
     background-color: red;
     width: 80%;
+}
+
+.puntos{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
 }
