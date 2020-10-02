@@ -34,6 +34,9 @@ ul li{
     padding: 15px;
     color: wheat;
 }
+.barra{
+    border-bottom: 2px solid wheat;
+}
 
 h1, h2, h3{
     color: ivory;
@@ -56,16 +59,12 @@ h1, h2, h3{
     border: none;
     font-size: 10px;
 }
-.topnav{
-    border: yellow 1px solid;
-}
 
 .search{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid greenyellow;
     height: 40vw;
     margin-bottom: 10px;
 }
