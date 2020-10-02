@@ -1,0 +1,143 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imagenes/john-jackson-1RauOvwrXLU-unsplash.jpg);
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: contain;
+    border-bottom: black 1px solid;
+    
+}
+
+ #container{
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+ }
+
+header{
+    display: flex;
+    float: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+ul{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    list-style: none;
+}
+ul li{
+    padding: 15px;
+    color: wheat;
+}
+
+h1, h2, h3{
+    color: ivory;
+}
+
+.login{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 50px;
+    width: 90px;
+    background-color: gray;
+    border: none;
+    font-size: 10px;
+    
+}
+.registrarse{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    height: 50px;
+    width: 90px;
+    background-color: white;
+    border: none;
+    font-size: 10px;
+}
+.topnav{
+    border: yellow 1px solid;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid greenyellow;
+    height: 20vw;
+    margin-bottom: 10px;
+
+}
+.pelis{
+    padding: 20px;
+}
+.pelis img{
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+}
+
+#piedep {
+    text-align: center;
+    text-decoration-color: beige;
+    border-top: 1px solid black;
+}
+div.vistas img{
+    width: 250px; height: 250px;
+    padding: 10px; justify-items: horizontal ;
+}
+div.nuevas img{
+    width: 250px; height: 250px;
+    padding: 10px; justify-items: horizontal ;
+    justify-items: center;
+    display: flex;
+}
+div.tendencias img{
+    width: 250px; height: 250px;
+    padding: 10px; justify-items: horizontal ;
+} 
+
+.masvistas{
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+}
+
+.nlanzamientos{
+    overflow: hidden; /* es un modelo de caja*/
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+}
+
+.tendencia{
+    overflow: hidden; /* es un modelo de caja*/
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+}
+
+.top10{
+    overflow: hidden; /* es un modelo de caja*/
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+}
+
+.holly{
+    overflow: hidden; /* es un modelo de caja*/
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+}
+
+.zoom{
+    transition: transform .5s;
+}
+
+.zoom:hover{
+    transform: scale(1.5);
+}
