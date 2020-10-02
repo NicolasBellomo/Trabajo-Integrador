@@ -83,6 +83,12 @@ h1, h2, h3{
     text-decoration-color: beige;
     border-top: 1px solid black;
 }
+
+.vistas{
+    background-color: black;
+    width: 100%;
+}
+
 div.vistas img{
     width: 250px; height: 250px;
     padding: 10px; justify-items: horizontal ;
@@ -103,6 +109,7 @@ div.tendencias img{
     background-color: #333;
     text-align: center;
     padding: 5px;
+    background-color: black;
 }
 
 .nlanzamientos{
@@ -110,6 +117,7 @@ div.tendencias img{
     background-color: #333;
     text-align: center;
     padding: 5px;
+    background-color: black;
 }
 
 .tendencia{
@@ -117,6 +125,7 @@ div.tendencias img{
     background-color: #333;
     text-align: center;
     padding: 5px;
+    background-color: black;
 }
 
 .top10{
@@ -124,6 +133,7 @@ div.tendencias img{
     background-color: #333;
     text-align: center;
     padding: 5px;
+    background-color: black;
 }
 
 .holly{
@@ -131,6 +141,7 @@ div.tendencias img{
     background-color: #333;
     text-align: center;
     padding: 5px;
+    background-color: black;
 }
 
 .zoom{
