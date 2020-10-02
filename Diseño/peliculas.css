@@ -145,3 +145,113 @@ div.tendencias img{
 .zoom:hover{
     transform: scale(1.5);
 }
+@media only screen and (max-width: 375px){
+    body{
+        background-image: url(../imagenes/john-jackson-1RauOvwrXLU-unsplash.jpg);
+        background-size: cover;
+    }
+    
+    header{
+        display: flex;
+        float: center;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header h1{
+        display: none;
+    }
+    
+    .botones{
+        display: flex;
+        font-size: small;
+    }
+
+    ul{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        list-style: none;
+    }
+    ul li{
+        padding: 10px;
+        color: wheat;
+        font-size: 10px;
+    }
+    .barra{
+        border-bottom: 2px solid wheat;
+    }
+    
+    h1, h2, h3{
+        color: ivory;
+    }
+    
+    .login{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        height: 30px;
+        width: 60px;
+        background-color: gray;
+        border: none;
+        font-size: 6px;
+        
+    }
+    .registrarse{
+        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+        height: 30px;
+        width: 60px;
+        background-color: white;
+        border: none;
+        font-size: 6px;
+    }
+    
+    .search{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30vw;
+    }
+    .pelis{
+        padding: 20px;
+        display: flex;
+    }
+    .pelis img{
+        width: 70px;
+        height: 70px;
+        padding: 5px;
+    }
+    div.vistas img{
+        width: 70px; height: 70px;
+        padding: 10px; justify-items: horizontal ;
+    }
+    div.nuevas img{
+        width: 70px; height: 70px;
+        padding: 10px; justify-items: horizontal ;
+        justify-items: center;
+        display: flex;
+    }
+    div.tendencias img{
+        width: 70px; height: 70px;
+        padding: 10px; justify-items: horizontal ;
+    } 
+    
+    .masvistas{
+        display: flex;
+    }
+    .holly{
+        display: flex;
+    }
+
+    .top10{
+        display: flex;
+    }
+
+    .nlanzamientos{
+        display: flex;
+    }
+
+    .tendencia{
+        display: flex;
+    }
+}
