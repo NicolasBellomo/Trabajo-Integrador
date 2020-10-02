@@ -29,7 +29,7 @@ ul li{
     font-size: 13px;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, p{
     color: ivory;
 }
 h2{
@@ -90,10 +90,10 @@ h2{
     display: flex;
     justify-content: center;
     margin-top: 14vw;
-    
 }
+
 .review{
-    background-color: red;
+    background-color: black;
     width: 80%;
 }
 
@@ -101,4 +101,24 @@ h2{
     display: flex;
     justify-content: center;
     font-size: xx-large;
+    background-color: red;
+}
+
+.descripcion{
+    background-color: black;
+}
+.text{
+    margin-left: 30px;
+    padding: 20px;
+}
+.text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pelis img{
+    width: 190px;
+    height: 190px;
+    padding: 10px;
+}
+.recomendadas{
+    margin-left: 30px;
 }
