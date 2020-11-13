@@ -1,146 +1,96 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../imagenes/john-jackson-1RauOvwrXLU-unsplash.jpg);
-    background-attachment: initial;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-size: contain;
-    border-bottom: black 1px solid;
-    
+    background-color: rgb(240, 240, 240);
 }
-
- #container{
-    width: 1100px;
-    margin: 0px auto;
-    border: 1px solid black;
- }
-
-header{
-    display: flex;
-    float: center;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding-left: 50px;
-    padding-right: 50px;
+.uk-position-relative{
+    margin-bottom: 5%;
 }
-
 ul{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    list-style: none;
-}
-ul li{
     padding: 15px;
     color: wheat;
 }
-.barra{
-    border-bottom: 2px solid wheat;
+
+.uk-logo{
+    margin-left: 30px;
 }
 
-h1, h2, h3{
-    color: ivory;
+.boton1{
+    background-color: rgb(70, 70, 70);
+    color: white;
+    size: auto;
 }
 
-.login{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.boton2{
+    background-color: rgb(168, 168, 170);
+}
+
+.uk-button{
+    width: 150px;
     height: 50px;
-    width: 90px;
-    background-color: gray;
-    border: none;
-    font-size: 10px;
-    
+    margin: 2px;
+
 }
-.registrarse{
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    height: 50px;
-    width: 90px;
-    background-color: white;
-    border: none;
-    font-size: 10px;
+.uk-navbar-left{
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    width: 60%;
 }
 
-.search{
+.uk-navbar-right{
+    margin-right: 3%;
+}
+
+.tapa{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40vw;
-    margin-bottom: 10px;
+    width: 410px;
+    margin-left: 150px;
+    padding: 2px;
+    margin-top: 8vw;
 }
-.pelis{
-    padding: 20px;
+.tapa h2{
+    font-size: 42px;
+    margin-top: 5px;
 }
-.pelis img{
-    width: 250px;
-    height: 250px;
-    padding: 5px;
+.tapa p{
+    color: blanchedalmond;
+}
+
+.line {
+    display: flex;
+}
+.line p{
+    font-size: 12px;
+    color: blanchedalmond;
+    margin: 5px;
+    padding-right: 10px;
+    border-right: blanchedalmond 1px solid;
+}
+.ver{
+    color: white;
+    background-color: red;
+    height: 45px;
+    width: 200px;
+    margin-left: 150px;
+}
+
+.uk-slideshow-items{
+    background-image: url(../Peliculas/narcos.jpg);
+    background-attachment: fixed;
+}
+
+.peliculas{
+    margin-left: 2%;
+    margin-right: 0%;
+    margin-bottom: 2%;
 }
 
 #piedep {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
     text-align: center;
     text-decoration-color: beige;
-    border-top: 1px solid black;
-}
-
-.vistas{
-    background-color: black;
-    width: 100%;
-}
-
-div.vistas img{
-    width: 250px; height: 250px;
-    padding: 10px; justify-items: horizontal ;
-}
-div.nuevas img{
-    width: 250px; height: 250px;
-    padding: 10px; justify-items: horizontal ;
-    justify-items: center;
-    display: flex;
-}
-div.tendencias img{
-    width: 250px; height: 250px;
-    padding: 10px; justify-items: horizontal ;
-} 
-
-.masvistas{
-    overflow: hidden;
-    background-color: #333;
-    text-align: center;
-    padding: 5px;
-    background-color: black;
-}
-
-.nlanzamientos{
-    overflow: hidden; /* es un modelo de caja*/
-    background-color: #333;
-    text-align: center;
-    padding: 5px;
-    background-color: black;
-}
-
-.tendencia{
-    overflow: hidden; /* es un modelo de caja*/
-    background-color: #333;
-    text-align: center;
-    padding: 5px;
-    background-color: black;
-}
-
-.top10{
-    overflow: hidden; /* es un modelo de caja*/
-    background-color: #333;
-    text-align: center;
-    padding: 5px;
-    background-color: black;
-}
-
-.holly{
-    overflow: hidden; /* es un modelo de caja*/
-    background-color: #333;
-    text-align: center;
-    padding: 5px;
-    background-color: black;
 }
 
 .zoom{
@@ -151,112 +101,12 @@ div.tendencias img{
     transform: scale(1.5);
 }
 @media only screen and (max-width: 375px){
-    body{
-        background-image: url(../imagenes/john-jackson-1RauOvwrXLU-unsplash.jpg);
-        background-size: cover;
+    .logito{
+        display: none
     }
     
-    header{
-        display: flex;
-        float: center;
-        justify-content: space-between;
-        align-items: center;
-        background-color: black;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    header h1{
-        display: none;
-    }
+    .gd{
+        margin: 0px
     
-    .botones{
-        display: flex;
-        font-size: small;
-    }
-
-    ul{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        display: flex;
-        list-style: none;
-    }
-    ul li{
-        padding: 10px;
-        color: wheat;
-        font-size: 10px;
-    }
-    .barra{
-        border-bottom: 2px solid wheat;
-    }
-    
-    h1, h2, h3{
-        color: ivory;
-    }
-    
-    .login{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        height: 30px;
-        width: 60px;
-        background-color: gray;
-        border: none;
-        font-size: 6px;
-        
-    }
-    .registrarse{
-        font-family: Verdana, Geneva, Tahoma, sans-serif ;
-        height: 30px;
-        width: 60px;
-        background-color: white;
-        border: none;
-        font-size: 6px;
-    }
-    
-    .search{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 30vw;
-    }
-    .pelis{
-        padding: 20px;
-        display: flex;
-    }
-    .pelis img{
-        width: 70px;
-        height: 70px;
-        padding: 5px;
-    }
-    div.vistas img{
-        width: 70px; height: 70px;
-        padding: 10px; justify-items: horizontal ;
-    }
-    div.nuevas img{
-        width: 70px; height: 70px;
-        padding: 10px; justify-items: horizontal ;
-        justify-items: center;
-        display: flex;
-    }
-    div.tendencias img{
-        width: 70px; height: 70px;
-        padding: 10px; justify-items: horizontal ;
-    } 
-    
-    .masvistas{
-        display: flex;
-    }
-    .holly{
-        display: flex;
-    }
-
-    .top10{
-        display: flex;
-    }
-
-    .nlanzamientos{
-        display: flex;
-    }
-
-    .tendencia{
-        display: flex;
     }
 }

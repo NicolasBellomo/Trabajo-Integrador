@@ -12,121 +12,201 @@
     <script src="jv/index.js"></script>
 </head>
 <body>
-    
-    <div class="container">
-        <section class="topnav">
-            <Header class="header">
-                <H1>LIKEFILM</H1> 
-                <nav>
-                    <ul>
-                        <li class="barra">Home</a></li>
-                        <li class="zoom"><a href="../Trabajo-Integrador/peliculas.html">Peliculas</a></li>
-                        <li class="zoom"><a href="../Trabajo-Integrador/series.html">Series</a></li>
-                    </ul>
-                </nav>
+     
+    <nav class="uk-navbar-container uk-margin .uk-width-1-1" uk-navbar>
+       
+        <a class="uk-navbar-item uk-logo logito" href="#">LIKEFILM</a>
 
-                <section class="botones">
-                    <button class="login">LOG IN</button>
-                    <button class="registrarse">REGISTRARSE</button>
-                </section>
-            </Header>
-        </section>
-
-            <nav class="search">
-                <h2>Tu mejor programa Martin!</h2>
-                <form class="medio">
-                    <form class="uk-search">
-                        <input class="uk-search-input" type="search" placeholder="">
+        <div class="uk-navbar-left">
+                
+            <ul class="uk-navbar-nav">
+                <li class="gd"><a href="#">Peliculas</a></li>
+                    <li class="gd"><a href="#">Series</a></li>
+                    <li class="gd">
+                        <a href="#">Generos</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Tu favorito</a></li>
+                                <li><a href="#">Comedia</a></li>
+                                <li class="uk-nav-header">Recomendados</li>
+                                <li><a href="#">Accion</a></li>
+                                <li><a href="#">Terror</a></li>
+                                <li class="uk-nav-divider"></li>
+                            <li><a href="#">Ver todos</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+                
+                <div class="uk-navbar-item">
+                    <form action="javascript:void(0)">
+                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Que estas buscando?">
                     </form>
+                </div>
+                
+        </div>
 
-                    <select name="Generos" id="">
-                        <option value="Generos"><a href="genero.html"></a>Generos</option>
-                        <option value=""><a href="genero.html"></a>Drama</option>
-                        <option value=""><a href="genero.html"></a>Comedia</option>
-                        <option value=""><a href="genero.html"></a>Terror</option>
-                        <option value=""><a href="genero.html"></a>Ciencia ficcion </option>
-                        <option value=""><a href="genero.html"></a>Crimen</option>
-                        <option value=""><a href="genero.html"></a>Infantiles</option>
-                        <option value=""><a href="genero.html"></a>Adultos</option>
-                        <option value=""><a href="genero.html"></a>Suspenso</option>
-                    </select>
-                </form>
-            </nav>
+        <div class="uk-navbar-right">
+            <button class="uk-button uk-button-default boton1">REGISTRARSE</button>
+            <button class="uk-button uk-button-default boton2">LOG IN</button>
+        </div>
+
+    </nav>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <section class="tapa">
+                    <p class="rating">★ 9.1/10</p>
+                    <h2 class="titular">Once Upon A Time in Hollywood</h2>
+                    <article class="line">
+                        <p class="tiempo">2h 40m</p> 
+                        <p class="genero">Drama/Comedia</p> 
+                        <p class="director">Directed by: Quentin Tarantino</p> 
+                    </article>
+                </section>
+        
+                <button class="ver">VER PELICULA</button>
+            </li>
+            <li>
+                <section class="tapa">
+                    <h3class="rating">★ 9.1/10</h3> 
+                    <h2 class="titular">Once Upon A Time in Hollywood</h2>
+                    <article class="line">
+                        <p class="tiempo">2h 40m</p> 
+                        <p class="genero">Drama/Comedia</p> 
+                        <p class="director">Directed by: Quentin Tarantino</p> 
+                    </article>
+                </section>
+        
+                <button class="ver">VER PELICULA</button>
+            </li>
+            <li>
+                <section class="tapa">
+                    <p class="rating">★ 9.1/10</p>
+                    <h2 class="titular">Once Upon A Time in Hollywood</h2>
+                    <article class="line">
+                        <p class="tiempo">2h 40m</p> 
+                        <p class="genero">Drama/Comedia</p> 
+                        <p class="director">Directed by: Quentin Tarantino</p> 
+                    </article>
+                </section>
+        
+                <button class="ver">VER PELICULA</button>
+            </li>
+        </ul>
+        
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
     </div>
 
-    <section>
-            
-            <h3>Mas vistos esta semana</h3>
-            <article class="pelis">
-                <a href="serieDetalle.html"> <img class="zoom" src="../Trabajo-Integrador/Peliculas/hasta el hultimo hombre portada.jpg" alt=""> </a>
-                <a href="serieDetalle.html"><img class="zoom" src="Peliculas/friends portada.jpg" alt="">
-                <a href="serieDetalle.html"><img class="zoom" src="Peliculas/El sr de los anillos portada.jpg" alt="">
-                <a href="serieDetalle.html"><img class="zoom" src="Peliculas/peaky blinders portada.jpg" alt="">
-                <a href="serieDetalle.html"><img class="zoom" src="Peliculas/portada endgame.jpg" alt="">
-            </article>
-            
-            
-            <div class="vistas">
-                    <h3 class="masvistas">Clasicos</h3>
-                    <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/el hobbit portada.jpg" alt="">
-                    <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/darkest hour portada.jpg" alt="darkest hours">
-                    <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/forest gump portada.jpg" alt="forest"> 
-                    <a href="serieDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/friends portada.jpg" alt="friends">
-                        <a href="serieDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/black list.jpg" alt="black list">
-    
-                    <h3 class="holly">Peliculas de Hollywood</h3>
-                    <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/el hobbit portada.jpg" alt="el hobbit"> 
-                    <a href="serieDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/la casa de papel pirtada.jpg" alt="la casa de papel">
-                    <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/merli portada.jpg" alt="merli">
-                    <a href="serieDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/peaky blinders portada.jpg" alt="peaky blinders"> 
-                    <img class="zoom" src="../Trabajo-Integrador/Peliculas/friends portada.jpg" alt="friends"> 
-    
-                    <h3 class="top10">TOP 10</h3>
-                    <a href="serieDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/greys anatomy.jpg" alt="greys"> 
-                    <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/Habia una vez en hollywood.jpg" alt="habia una vez en hollywood">
-                    <a href="peliculaDetalle.html"> <img class="zoom" src="../Trabajo-Integrador/Peliculas/the tru amn show.jpg" alt="the tru man show">
-                        <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/mi vecino totoro.jpg" alt="mi vecino totoro">
-                    <img class="zoom" src="../Trabajo-Integrador/Peliculas/elite.jpg" alt="elite"> 
+    <section class="peliculas mas-vistas">
+        <h3>Mas vistos estas semanas</h3>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+            <ul id="mas-vistas" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+               
+            </ul>
         
-                    <!--<div class="nuevas">-->
-                        <h3 class="nlanzamientos">Nuevos Lanzamientos</h3>
-                        <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/la teoria del todo.jpg" alt="la teoria del todo">
-                        <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/dragon ball broly.jpg" alt="dragon ball">
-                        <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/transformers la era de la extinciosn.jpg" alt="transformers la era de la extin">
-                        <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/the witcher.jpg" alt="the witcher">
-                        <a href="serieDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/prision B.jpg" alt="prision B">
-                    <!--</div>-->
-            
-                    <!--<div class="tendencias">-->
-                        <h3 class="tendencia">Tendencias</h3>
-                        <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/perfume de mujer.jpg" alt="perfume de mujer">
-                        <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/spiderman lejos de casa.jpg" alt="spiderman lejos de casa">
-                        <a href="serieDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/narcos.jpg" alt="narcos">
-                        <a href="peliculaDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/hambvre de poder.jpg" alt="hambre de poder">
-                        <a href="serieDetalle.html"><img class="zoom" src="../Trabajo-Integrador/Peliculas/sex education.jpg" alt="sex education">
-                    <!--</div>-->
-            </div>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
         
-
-
-
-
-
-        <div id="piedep">
-            
-         <footer>
-            Valentin Ulloa - Juan Pantin - Nicolas Bellomo WEB &copy; 2020
-         </footer>
-            
-         <footer>
-          Programacion 1
-         </footer>
-
         </div>
-        
 
     </section>
 
+    <section class="peliculas ultimas">
+
+        <h3>Ultimos lanzamientos</h3>
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+            <ul id=ultimas class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+    </section>
+
+    <section class="peliculas recomendadas">
+        <h3>Recomendaciones para vos</h3>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                <li>
+                    <img src="Peliculas/house of cards.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>1</h1></div>
+                </li>
+                <li>
+                    <img src="Peliculas/house of cards.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>2</h1></div>
+                </li>
+                <li>
+                    <img src="Peliculas/house of cards.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>3</h1></div>
+                </li>
+                <li>
+                    <img src="Peliculas/house of cards.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>4</h1></div>
+                </li>
+                <li>
+                    <img src="Peliculas/house of cards.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>5</h1></div>
+                </li>
+                <li>
+                    <img src="Peliculas/house of cards.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>6</h1></div>
+                </li>
+                <li>
+                    <img src="Peliculas/house of cards.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>7</h1></div>
+                </li>
+                <li>
+                    <img src="Peliculas/house of cards.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>8</h1></div>
+                </li>
+                <li>
+                    <img src="Peliculas/house of cards.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>9</h1></div>
+                </li>
+                <li>
+                    <img src="Peliculas/house of cards.jpg" alt="">
+                    <div class="uk-position-center uk-panel"><h1>10</h1></div>
+                </li>
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+
+    </section>
+
+
+    <div id="piedep">
+            
+        <footer>
+           Valentin Ulloa - Juan Pantin - Nicolas Bellomo 
+        </footer>
+        <footer>
+            WEB &copy; 2020
+        </footer>
+        <footer>
+         Programacion 1
+        </footer>
+
+        <a href="https://twitter.com/?lang=es" class="uk-icon-button" uk-icon="twitter"></a>
+        <a href="https://www.facebook.com" class="uk-icon-button" uk-icon="facebook"></a>
+        <a href="https://www.instagram.com/" class="uk-icon-button" uk-icon="instagram"></a>
+
+    </div>
 
 </body>
 </html>
