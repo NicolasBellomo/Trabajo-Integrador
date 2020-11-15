@@ -1,0 +1,239 @@
+ul{
+    padding: 15px;
+    color: wheat;
+}
+
+.uk-logo{
+    margin-left: 30px;
+}
+
+.boton1{
+    background-color: rgb(70, 70, 70);
+    color: white;
+    size: auto;
+}
+
+.boton2{
+    background-color: rgb(168, 168, 170);
+}
+
+.uk-button{
+    width: 150px;
+    height: 50px;
+    margin: 2px;
+
+}
+.uk-navbar-left{
+    margin-left: 3%;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.uk-navbar-right{
+    margin-right: 3%;
+}
+
+
+h1, h2, h3, h4, p{
+    color: ivory;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 50px;
+    width: 90px;
+    background-color: gray;
+    border: none;
+    font-size: 10px;
+    
+}
+.registrarse{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    height: 50px;
+    width: 90px;
+    background-color: white;
+    border: none;
+    font-size: 10px;
+}
+.tapa{
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    margin-left: 150px;
+    padding: 2px;
+    margin-top: 8vw;
+}
+.tapa h2{
+    font-size: 42px;
+}
+.tapa p{
+    color: blanchedalmond;
+}
+
+.line {
+    display: flex;
+}
+.line p{
+    font-size: 12px;
+    color: blanchedalmond;
+    margin: 5px;
+    padding-right: 10px;
+    border-right: blanchedalmond 1px solid;
+}
+.ver{
+    color: white;
+    background-color: red;
+    height: 45px;
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+#base{
+    display: flex;
+    justify-content: center;
+    margin-top: 14vw;
+}
+
+.review{
+    background-color: black;
+    width: 80%;
+}
+
+.puntos{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    background-color: red;
+}
+
+.descripcion{
+    background-color: black;
+}
+.text{
+    margin-left: 30px;
+    padding: 20px;
+}
+.text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pelis img{
+    width: 190px;
+    height: 190px;
+    padding: 10px;
+}
+.recomendadas{
+    margin-left: 30px;
+}
+@media only screen and (max-width: 385px){
+   
+    ul{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        list-style: none;
+    }
+    ul li{
+        padding: 15px;
+        color: wheat;
+        font-size: 13px;
+    }
+    
+    h1, h2, h3, h4, p{
+        color: ivory;
+    }
+    h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .login{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        height: 50px;
+        width: 90px;
+        background-color: gray;
+        border: none;
+        font-size: 6px;
+        
+    }
+    .registrarse{
+        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+        height: 50px;
+        width: 90px;
+        background-color: white;
+        border: none;
+        font-size: 6px;
+    }
+    .tapa{
+        display: flex;
+        flex-direction: column;
+        width: 410px;
+        margin-left: 150px;
+        padding: 2px;
+        margin-top: 8vw;
+    }
+    .tapa h2{
+        font-size: 42px;
+    }
+    .tapa p{
+        color: blanchedalmond;
+    }
+    
+    .line {
+        display: flex;
+    }
+    .line p{
+        font-size: 12px;
+        color: blanchedalmond;
+        margin: 5px;
+        padding-right: 10px;
+        border-right: blanchedalmond 1px solid;
+    }
+    .ver{
+        color: white;
+        background-color: red;
+        height: 45px;
+        width: 200px;
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+    #base{
+        display: flex;
+        justify-content: center;
+        margin-top: 14vw;
+    }
+    
+    .review{
+        background-color: black;
+        width: 80%;
+    }
+    
+    .puntos{
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        background-color: red;
+    }
+    
+    .descripcion{
+        background-color: black;
+    }
+    .text{
+        margin-left: 30px;
+        padding: 20px;
+    }
+    .text p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .pelis img{
+        width: 190px;
+        height: 190px;
+        padding: 10px;
+    }
+    .recomendadas{
+        margin-left: 30px;
+    }
+
+
+}
