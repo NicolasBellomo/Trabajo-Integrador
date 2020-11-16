@@ -31,9 +31,12 @@
 
         <nav class="search">
             <h2>Peliculas</h2>
-            <form class="medio">
-                <input type="text" placeholder="Que estas buscando?" maxlength="25">
+            <form class="medio" action="resultadobusqueda.html" method="GET">
+                <label for="q">busqueda</label>  <input type="text" placeholder="Que estas buscando?" maxlength="25" name="busqueda">
+            </form>    
 
+
+            <form class="medio">   
                 <select name="Generos" id="">
                     <option value="Generos">Generos</option>
                     <option value="">Drama</option>
