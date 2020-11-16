@@ -1,8 +1,8 @@
 window.addEventListener("load", function(){
 
     var url = `https://image.tmdb.org/t/p/w500`
-
-
+    var api_key = `eb09954096929ff16616027732037e32`
+    
     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=eb09954096929ff16616027732037e32&language=en-US&page=1`)
     .then(function (response) {
         return response.json()
