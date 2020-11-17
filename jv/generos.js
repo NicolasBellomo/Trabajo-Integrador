@@ -1,5 +1,7 @@
 window.addEventListener("load", function(){ 
     
+    var api_key = `eb09954096929ff16616027732037e3`
+    
     fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=eb09954096929ff16616027732037e32&language=en-US`)
     .then(function (response) {
         return response.json()
@@ -13,9 +15,9 @@ window.addEventListener("load", function(){
         
 
         for (let i = 0; i < genero.length; i++) {
-            const element = genero.genres.name[i];
+            const element = genero.genres[i];
             
-           var palabra = `<p>${element}</p>`
+           var palabra = `<p>${element.name}</p>`
 
         texto.innerHTML = palabra
         }

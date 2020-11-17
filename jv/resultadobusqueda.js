@@ -1,10 +1,4 @@
 window.addEventListener("load",function(){
-    var queryStringObj = new URLSearchParams(location.search);
-
-    var busqueda = queryStringObj.get("busqueda");
-
-    var midiv = document.querySelector("#info");
-    midiv.innerHTML = "estoy buscando " + showElegido
 
     var api_key = `eb09954096929ff16616027732037e32`
 
@@ -44,3 +38,14 @@ window.addEventListener("load",function(){
 
 
 });
+
+
+var queryStringObj = new URLSearchParams(location.search);
+
+var busqueda = queryStringObj.get("busqueda");
+
+var midiv = document.querySelector("#info");
+midiv.innerHTML = "estoy buscando " + showElegido
+
+
+//https://api.themoviedb.org/3/search/company?api_key=eb09954096929ff16616027732037e32&query=120&page=1
