@@ -43,14 +43,11 @@ ul{
 .tapa{
     display: flex;
     flex-direction: column;
-    width: 410px;
-    margin-left: 150px;
     padding: 2px;
-    margin-top: 8vw;
 }
 .tapa h2{
     font-size: 42px;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 .tapa p{
     color: blanchedalmond;
@@ -58,6 +55,7 @@ ul{
 
 .line {
     display: flex;
+    justify-content: center;
 }
 .line p{
     font-size: 12px;
@@ -72,17 +70,23 @@ ul{
     height: 45px;
     width: 200px;
     margin-left: 150px;
+    align-self: auto;
+
 }
 
-.uk-slideshow-items{
-    background-image: url(../Peliculas/narcos.jpg);
+.uk-slideshow-item{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../aux.jpg);
     background-attachment: fixed;
 }
 
 .peliculas{
     margin-left: 2%;
-    margin-right: 0%;
+    margin-right: -1.5%;
     margin-bottom: 2%;
+}
+
+.uk-slider-items li{
+    padding:1px;
 }
 
 #piedep {
@@ -92,27 +96,32 @@ ul{
     text-align: center;
     text-decoration-color: beige;
 }
-
-.zoom{
-    transition: transform .5s;
+.peliculas img{
+    transition: .5s;
 }
 
-.zoom:hover{
-    transform: scale(1.5);
-}
-@media only screen and (max-width: 375px){
-    .logito{
-        display: none
-    }
-    
-    .gd{
-        margin: 0px
-    
-    }
+.peliculas img:hover{
+    margin-left: 0.3px;
+    cursor: pointer;
+    transform: scale(1.08);
 }
 
-#search img {
-    display: flex;
-    justify-content: right;
-    width: 15px;
+
+@media only screen and (max-width: 385px){
+
+.logito{
+    display: none
+}
+
+.gd{
+    margin: 0px
+
+}
+.boton1{
+    display: none;
+}
+.boton2{
+    display: none;
+}
+
 }
