@@ -1,51 +1,59 @@
-window.addEventListener("load",function(){
+window.addEventListener("load", function(){
+    
+    const API_KEY = `0231890e16950b2b1fe941aec8ffe1d6`;
+   //const API_KEY = `eb09954096929ff16616027732037e32`;
+    const IMAGE_URL = `https://image.tmdb.org/t/p/w500`; 
+     const url = `https://api.themoviedb.org/3/search/movie?api_key=0231890e16950b2b1fe941aec8ffe1d6`;
+    //const url = `https://api.themoviedb.org/3/movie/popular?api_key=eb09954096929ff16616027732037e32&language=en-US&page=`;
 
-    var api_key = `eb09954096929ff16616027732037e32`
+const buttonElement = document.querySelector(`#search`);
+const InputElement = document.querySelector(`#inputValue`);
+const movieSearchable = document.querySelector(`movies-searchable`);
 
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=eb09954096929ff16616027732037e32&language=en-US&page=1`)
-    .then(function (response) {
-        return response.json()
+
+function movieSection(movies) {
+    return movie.map((movie) => {
+        return `
+        <img src=${IMAGE_URL +  movie.poster_path} data-movie-id=${movie.id}/>
+        `;
     })
+}
 
-    .then(function (pelicula) {
-        
-        console.log(pelicula);
+function createMovieContainer(movies) {
+    const movieElement = document.createElement(`div`);
+    movieElement.setAttribute(`class`, `movie`);
 
-        var vistas = document.querySelector("#ultimas")
-        
+    const movieTemplate = `
+    <section class="section">
+    ${movieSection(movies)} 
+    </section>
+    <div class="content">
+     <p id="content-close">x</p>
+     </div>
+    `;
+    
+    movieElement.innerHTML = movieTemplate;
+    return movieElement; 
+}
 
-        for (let i = 0; i < pelicula.results.length; i++) {
-            const element = pelicula.results[i];
-            
-           
+buttonElement.onclick = function(event) {
+    event.preventDefault();
+    const value = InputElement.value;
 
-           var peliAgregar = `<li>
-           <img src= "${url}${element.poster_path}" alt="nn"/>
-           <div class="uk-position-center uk-panel"><h1></h1></div>
-       </li>`;
-
-            vistas.innerHTML += peliAgregar
-        }
+    const newUrl = url + `&query=` + value;
+    
+    fetch(newUrl)
+    .then((res) => res.json())
+    .then((data) => {
+        const movies = data.results;
         
         
-        
+        console.log(`data: `, data);
     })
-
-    .catch(function(error) {
-        console.log(`El error fue: ${error}`);
-    })
-
-
-
-});
-
-
-var queryStringObj = new URLSearchParams(location.search);
-
-var busqueda = queryStringObj.get("busqueda");
-
-var midiv = document.querySelector("#info");
-midiv.innerHTML = "estoy buscando " + showElegido
-
-
-//https://api.themoviedb.org/3/search/company?api_key=eb09954096929ff16616027732037e32&query=120&page=1
+    .catch((error) => {
+       console.log(`error: `, error);
+    });
+    console.log(`value: `, value);
+   
+}
+})

@@ -110,3 +110,9 @@ ul{
     
     }
 }
+
+#search img {
+    display: flex;
+    justify-content: right;
+    width: 15px;
+}
