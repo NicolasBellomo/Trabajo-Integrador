@@ -5,8 +5,8 @@ let search = queryObject.get ('search');
 console.log(search);
 
 
-let apiKey = "0231890e16950b2b1fe941aec8ffe1d6"
-let url = `https://api.themoviedb.org/3/search/movie?api_key=0231890e16950b2b1fe941aec8ffe1d6`
+let apiKey = "eb09954096929ff16616027732037e32"
+let url = `https://api.themoviedb.org/3/movie/popular?api_key=eb09954096929ff16616027732037e32&language=en-US&page=`
 
 let resultados = document.querySelector('.resultados')
 
