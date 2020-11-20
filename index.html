@@ -10,197 +10,195 @@
     <link rel="stylesheet" href="Diseño/index.css">
     <!--<link rel="shortcut icon" type="image/x-icon"  href="Imagenes/camalogo2.png">-->
     <script src="jv/index.js"></script>
-    <script src="jv/resultadobusqueda.js"></script>
+    <script src="jv/resultadobusqueda.js"></script> 
+    
 </head>
 <body>
-     
+            
     <nav class="uk-navbar-container uk-margin .uk-width-1-1" uk-navbar>
        
-        <a class="uk-navbar-item uk-logo logito" href="#">LIKEFILM</a>
-
-        <div class="uk-navbar-left">
-                
-            <ul class="uk-navbar-nav">
-                <li class="gd"><a href="#">Peliculas</a></li>
-                    <li class="gd"><a href="#">Series</a></li>
-                    <li class="gd">
-                        <a href="#">Generos</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#">Tu favorito</a></li>
-                                <li><a href="#">Comedy</a></li>
-                                <li class="uk-nav-header">Recomendados</li>
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Horror</a></li>
-                                <li class="uk-nav-divider"></li>
-                            <li><a href="#">Ver todos</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+            <a class="uk-navbar-item uk-logo logito" href="index.html">LIKEFILM</a>
+    
+            <div class="uk-navbar-left">
+                    
+                <ul class="uk-navbar-nav">
+                    <li class="pelinav gd"><a href="#">Peliculas</a></li>
+                        <li class="serienav gd"><a href="#">Series</a></li>
+                        <li class="generonav gd">
+                            <a href="#">Generos</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Tu favorito</a></li>
+                                    <li><a href="detalle.html?genero=Comedy">Comedy</a></li>
+                                    <li class="uk-nav-header">Recomendados</li>
+                                    <li><a href="detalle.html?genero=Action">Action</a></li>
+                                    <li><a href="detalle.html?genero=Horroromedy">Horror</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                <li><a href="generos.html">Ver todos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                            
+                        <div class="container">  
+                            <form method="GET" action="resultadobusqueda.html">
+                                <div class="uk-navbar-item" class="form-group">
+                                    <input type="search" id="inputValue" class="uk-input uk-form-width-medium" class="search" name="buscador" placeholder="¿Que estas buscando?">
+                                </div>
             
-              <!-- <div class="uk-navbar-item">
+                                
+                            </form>
+                        </div> 
+            
+                        <div id="movies-searchable">
+                            <div class="movie">
+            
+                            </div>
+                        </div>
+                        <!-- <div class="uk-navbar-item">
                     <form action="javascript:void(0)">
                         <input class="uk-input uk-form-width-medium" type="text" placeholder="Que estas buscando?">
                     </form>
                 </div> -->
 
-                <div class="container">  
-                    <form method="GET" action="resultadobusqueda.html">
-                        <div class="uk-navbar-item" class="form-group">
-                            <input type="search" id="inputValue" class="uk-input uk-form-width-medium" class="search" name="buscador" placeholder="¿Que estas buscando?">
-                            <button type="submit" id="search"></button>
-                        </div>
-    
-                        
-                    </form>
-                </div> 
-    
-                <div id="movies-searchable">
-                    <div class="movie">
-    
+                </div>
+            
+                    <a class="uk-navbar-item uk-logo" href="#">Hola, Martin! <span uk-icon="chevron-down"></span></a>
+            
+                </nav>
+            
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
+            
+                    <ul class="uk-slideshow-items banner">
+                        <li>
+                            <img src="peliculas/es-machista-once-upon-a-time-in-hollywood-tarantino.jpg" alt="" uk-cover>
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom-left uk-position-large uk-dark">
+                                <section class="tapa">
+                                    <h3 class="rating">★ 9.1/10</h3> 
+                                    <h2 class="titular">Once Upon A Time in Hollywood</h2>
+                                    <article class="line">
+                                        <p class="tiempo">2h 40m</p> 
+                                        <p class="genero">Drama/Comedia</p> 
+                                        <p class="director">Directed by: Quentin Tarantino</p> 
+                                    </article>
+            
+                                    <button class="ver"><a href="detalles.html">VER PELICULA</a></button>
+                                </section>
+                                
+                            </div>
+                        </li>
+            
+                        <li>
+                            <img src="es-machista-once-upon-a-time-in-hollywood-tarantino.jpg" alt="" uk-cover>
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom-left uk-position-large uk-dark">
+                                <section class="tapa">
+                                    <h3 class="rating">★ 9.1/10</h3> 
+                                    <h2 class="titular">Once Upon A Time in Hollywood</h2>
+                                    <article class="line">
+                                        <p class="tiempo">2h 40m</p> 
+                                        <p class="genero">Drama/Comedia</p> 
+                                        <p class="director">Directed by: Quentin Tarantino</p> 
+                                    </article>
+            
+                                    <button class="ver">VER PELICULA</button>
+                                </section>
+                                
+                            </div>
+                        </li>
+            
+                        <li>
+                            <img src="es-machista-once-upon-a-time-in-hollywood-tarantino.jpg" alt="" uk-cover>
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom-left uk-position-large uk-dark">
+                                <section class="tapa">
+                                    <h3 class="rating">★ 9.1/10</h3> 
+                                    <h2 class="titular">Once Upon A Time in Hollywood</h2>
+                                    <article class="line">
+                                        <p class="tiempo">2h 40m</p> 
+                                        <p class="genero">Drama/Comedia</p> 
+                                        <p class="director">Directed by: Quentin Tarantino</p> 
+                                    </article>
+            
+                                    <button class="ver">VER PELICULA</button>
+                                </section>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <div class="uk-light">
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                     </div>
-                </div>
                 
-        </div>
-
-        <div class="uk-navbar-right">
-            <button class="uk-button uk-button-default boton1">REGISTRARSE</button>
-            <button class="uk-button uk-button-default boton2">LOG IN</button>
-        </div>
-
-    </nav>
-
-    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
-
-        <ul class="uk-slideshow-items banner">
-            <li>
-                <img src="es-machista-once-upon-a-time-in-hollywood-tarantino.jpg" alt="" uk-cover>
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom-left uk-position-large uk-dark">
-                    <section class="tapa">
-                        <h3 class="rating">★ 9.1/10</h3> 
-                        <h2 class="titular">Once Upon A Time in Hollywood</h2>
-                        <article class="line">
-                            <p class="tiempo">2h 40m</p> 
-                            <p class="genero">Drama/Comedia</p> 
-                            <p class="director">Directed by: Quentin Tarantino</p> 
-                        </article>
-
-                        <button class="ver">VER PELICULA</button>
-                    </section>
-                    
                 </div>
-            </li>
-
-            <li>
-                <img src="es-machista-once-upon-a-time-in-hollywood-tarantino.jpg" alt="" uk-cover>
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom-left uk-position-large uk-dark">
-                    <section class="tapa">
-                        <h3 class="rating">★ 9.1/10</h3> 
-                        <h2 class="titular">Once Upon A Time in Hollywood</h2>
-                        <article class="line">
-                            <p class="tiempo">2h 40m</p> 
-                            <p class="genero">Drama/Comedia</p> 
-                            <p class="director">Directed by: Quentin Tarantino</p> 
-                        </article>
-
-                        <button class="ver">VER PELICULA</button>
-                    </section>
+            
+                <section class="peliculas mas-vistas">
+                    <h3>Mas vistos estas semanas</h3>
+            
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            
+                        <ul id="mas-vistas" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                           
+                        </ul>
                     
-                </div>
-            </li>
-
-            <li>
-                <img src="es-machista-once-upon-a-time-in-hollywood-tarantino.jpg" alt="" uk-cover>
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom-left uk-position-large uk-dark">
-                    <section class="tapa">
-                        <h3 class="rating">★ 9.1/10</h3> 
-                        <h2 class="titular">Once Upon A Time in Hollywood</h2>
-                        <article class="line">
-                            <p class="tiempo">2h 40m</p> 
-                            <p class="genero">Drama/Comedia</p> 
-                            <p class="director">Directed by: Quentin Tarantino</p> 
-                        </article>
-
-                        <button class="ver">VER PELICULA</button>
-                    </section>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
                     
+                    </div>
+            
+                </section>
+            
+                <section class="peliculas ultimas">
+            
+                    <h3>Ultimos lanzamientos</h3>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            
+                        <ul id="ultimas" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                            
+                        </ul>
+                    
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    
+                    </div>
+            
+                </section>
+            
+                <section class="peliculas recomendadas">
+                    <h3>Recomendaciones para vos</h3>
+            
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            
+                        <ul id="reco" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                            
+                        </ul>
+                    
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    
+                    </div>
+            
+                </section>
+            
+            
+                <div id="piedep">  
+                    <footer>
+                       Valentin Ulloa - Juan Pantin - Nicolas Bellomo 
+                    </footer>
+                    <footer>
+                        WEB &copy; 2020
+                    </footer>
+                    <footer>
+                     Programacion 1
+                    </footer>
+            
+                    <a href="https://twitter.com/?lang=es" class="uk-icon-button" uk-icon="twitter"></a>
+                    <a href="https://www.facebook.com" class="uk-icon-button" uk-icon="facebook"></a>
+                    <a href="https://www.instagram.com/" class="uk-icon-button" uk-icon="instagram"></a>
+            
                 </div>
-            </li>
-        </ul>
-    
-        <div class="uk-light">
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-        </div>
-    
-    </div>
-
-    <section class="peliculas mas-vistas">
-        <h3>Mas vistos estas semanas</h3>
-
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-            <ul id="mas-vistas" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-               
-            </ul>
-        
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        
-        </div>
-
-    </section>
-
-    <section class="peliculas ultimas">
-
-        <h3>Ultimos lanzamientos</h3>
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-            <ul id="ultimas" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-                
-            </ul>
-        
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        
-        </div>
-
-    </section>
-
-    <section class="peliculas recomendadas">
-        <h3>Recomendaciones para vos</h3>
-
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-            <ul id="reco" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-                
-            </ul>
-        
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        
-        </div>
-
-    </section>
-
-
-    <div id="piedep">  
-        <footer>
-           Valentin Ulloa - Juan Pantin - Nicolas Bellomo 
-        </footer>
-        <footer>
-            WEB &copy; 2020
-        </footer>
-        <footer>
-         Programacion 1
-        </footer>
-
-        <a href="https://twitter.com/?lang=es" class="uk-icon-button" uk-icon="twitter"></a>
-        <a href="https://www.facebook.com" class="uk-icon-button" uk-icon="facebook"></a>
-        <a href="https://www.instagram.com/" class="uk-icon-button" uk-icon="instagram"></a>
-
-    </div>
-
-</body>
-</html>
+            
+            </body>
+            </html>
+            
+            <a href=""></a>
