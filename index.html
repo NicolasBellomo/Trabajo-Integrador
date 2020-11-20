@@ -17,55 +17,54 @@
             
     <nav class="uk-navbar-container uk-margin .uk-width-1-1" uk-navbar>
        
-            <a class="uk-navbar-item uk-logo logito" href="index.html">LIKEFILM</a>
-    
-            <div class="uk-navbar-left">
-                    
-                <ul class="uk-navbar-nav">
-                    <li class="pelinav gd"><a href="#">Peliculas</a></li>
-                        <li class="serienav gd"><a href="#">Series</a></li>
-                        <li class="generonav gd">
-                            <a href="#">Generos</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li class="uk-active"><a href="#">Tu favorito</a></li>
-                                    <li><a href="detalle.html?genero=Comedy">Comedy</a></li>
-                                    <li class="uk-nav-header">Recomendados</li>
-                                    <li><a href="detalle.html?genero=Action">Action</a></li>
-                                    <li><a href="detalle.html?genero=Horroromedy">Horror</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                <li><a href="generos.html">Ver todos</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                            
-                        <div class="container">  
-                            <form method="GET" action="resultadobusqueda.html">
-                                <div class="uk-navbar-item" class="form-group">
-                                    <input type="search" id="inputValue" class="uk-input uk-form-width-medium" class="search" name="buscador" placeholder="¿Que estas buscando?">
-                                </div>
-            
-                                
-                            </form>
-                        </div> 
-            
-                        <div id="movies-searchable">
-                            <div class="movie">
-            
-                            </div>
-                        </div>
-                        <!-- <div class="uk-navbar-item">
-                    <form action="javascript:void(0)">
-                        <input class="uk-input uk-form-width-medium" type="text" placeholder="Que estas buscando?">
-                    </form>
-                </div> -->
+        <a class="uk-navbar-item uk-logo logito" href="index.html">LIKEFILM</a>
 
+        <div class="uk-navbar-left">
+                
+            <ul class="uk-navbar-nav">
+                <li class="pelinav gd"><a href="index.html">Peliculas</a></li>
+                    <li class="serienav gd"><a href="#">Series</a></li>
+                    <li class="generonav gd">
+                        <a href="#">Generos</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Tu favorito</a></li>
+                                <li><a href="detalle.html?genero=Comedy">Comedy</a></li>
+                                <li class="uk-nav-header">Recomendados</li>
+                                <li><a href="detalle.html?genero=Action">Action</a></li>
+                                <li><a href="detalle.html?genero=Horroromedy">Horror</a></li>
+                                <li class="uk-nav-divider"></li>
+                            <li><a href="generos.html">Ver todos</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+                
+            <div class="container">  
+                <form method="GET" action="resultadobusqueda.html">
+                    <div class="uk-navbar-item" class="form-group">
+                        <input type="search" id="inputValue" class="uk-input uk-form-width-medium" class="search" name="buscador" placeholder="¿Que estas buscando?">
+                    </div>
+
+                    
+                </form>
+            </div> 
+
+                <div id="movies-searchable">
+                    <div class="movie">
+
+                    </div>
                 </div>
+                
+                <ul class="uk-navbar-nav">
+                    <li class="gd"><a href="favoritos.html">Favoritos</a></li>
+                </ul>
             
-                    <a class="uk-navbar-item uk-logo" href="#">Hola, Martin! <span uk-icon="chevron-down"></span></a>
-            
-                </nav>
+        </div>
+
+        <a class="uk-navbar-item uk-logo" href="#">Hola, Martin! <span uk-icon="chevron-down"></span></a>
+
+    </nav>
             
                 <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push">
             
