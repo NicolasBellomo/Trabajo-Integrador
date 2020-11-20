@@ -1,14 +1,16 @@
+window.addEventListener("load", function(){
+
 let queryString = window.location.search;
 console.log(queryString);
 let queryObject = new URLSearchParams(queryString)
-let search = queryObject.get ('search');
-console.log(search);
+let search = queryObject.get ('buscador');
+console.log(buscador);
 
 
 let apiKey = "eb09954096929ff16616027732037e32"
 let url = `https://api.themoviedb.org/3/movie/popular?api_key=eb09954096929ff16616027732037e32&language=en-US&page=`
 
-let resultados = document.querySelector('.resultados')
+let resultados = document.querySelector('.search')
 
 fetch(url)
 .then(function (respuestas){
@@ -41,3 +43,7 @@ fetch(url)
     
 })
 .catch(error => console.log(error))
+
+
+
+})
