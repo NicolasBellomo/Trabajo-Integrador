@@ -3,7 +3,7 @@ window.addEventListener("load", function(){
     var url = `https://image.tmdb.org/t/p/w500`
     
     
-        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=eb09954096929ff16616027732037e32&language=en-US&page=1`)
+        fetch(`https://api.themoviedb.org/3/tv/popular?api_key=eb09954096929ff16616027732037e32&language=en-US&page=1`)
         .then(function (response) {
             return response.json()
         })
@@ -18,7 +18,7 @@ window.addEventListener("load", function(){
             for (let i = 0; i < pelicula.results.length; i++) {
                 const element = pelicula.results[i];
     
-               var peliAgregar = `<a href="detalles.html?type=movie&idShow=${element.id}">
+               var peliAgregar = `<a href="detalles.html?type=tv&idShow=${element.id}">
                                     <li>
                                         <img src= "${url}${element.poster_path}" alt="nn"/>
                                             <div class="uk-position-center uk-panel"><h1></h1></div>
@@ -39,7 +39,7 @@ window.addEventListener("load", function(){
     
     
     
-        fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=eb09954096929ff16616027732037e32&language=en-US&page=1`)
+        fetch(`https://api.themoviedb.org/3/tv/top_rated?api_key=eb09954096929ff16616027732037e32&language=en-US&page=1`)
         .then(function (response) {
             return response.json()
         })
@@ -54,7 +54,7 @@ window.addEventListener("load", function(){
             for (let i = 0; i < peliculas.results.length; i++) {
                 const element = peliculas.results[i];
     
-               var peliAgregar = `<a href="detalles.html?type=movie&idShow=${element.id}">
+               var peliAgregar = `<a href="detalles.html?type=tv&idShow=${element.id}">
                                     <li>
                                         <img src= "${url}${element.poster_path}" alt="nn"/>
                                             <div class="uk-position-center uk-panel"><h1></h1></div>
@@ -72,7 +72,7 @@ window.addEventListener("load", function(){
     
     
     
-        fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=eb09954096929ff16616027732037e32&language=en-US&page=1`)
+        fetch(`https://api.themoviedb.org/3/tv/on_the_air?api_key=eb09954096929ff16616027732037e32&language=en-US&page=1`)
         .then(function (response) {
             return response.json()
         })
@@ -87,7 +87,7 @@ window.addEventListener("load", function(){
             for (let i = 0; i < recomendadas.results.length; i++) {
                 const element = recomendadas.results[i];
     
-               var peliAgregar = `<a href="detalles.html?type=movie&idShow=${element.id}&tipo=movie">
+               var peliAgregar = `<a href="detalles.html?type=tv&idShow=${element.id}&tipo=movie">
                                     <li>
                                         <img src= "${url}${element.poster_path}" alt="nn"/>
                                         <div class="uk-position-center uk-panel"><h1></h1></div>

@@ -59,75 +59,34 @@ h2{
     border: none;
     font-size: 10px;
 }
-.tapa{
-    display: flex;
-    flex-direction: column;
-    width: 410px;
-    margin-left: 150px;
-    padding: 2px;
-    margin-top: 8vw;
+
+.cards{
+    transition: .3s;
 }
-.tapa h2{
-    font-size: 42px;
-}
-.tapa p{
-    color: blanchedalmond;
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
-.line {
-    display: flex;
-}
-.line p{
-    font-size: 12px;
-    color: blanchedalmond;
-    margin: 5px;
-    padding-right: 10px;
-    border-right: blanchedalmond 1px solid;
-}
-.ver{
-    color: white;
-    background-color: red;
-    height: 45px;
-    width: 200px;
-    margin-left: 150px;
-    margin-top: 20px;
-}
-#base{
-    display: flex;
-    justify-content: center;
-    margin-top: 14vw;
+.card{
+    transition: .3s;
 }
 
-.review{
-    background-color: black;
-    width: 80%;
+
+.cards:hover{
+    cursor: pointer;
+    transform: scale(1.09);
 }
 
-.puntos{
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-    background-color: red;
+.generonav{
+    border-bottom: 2px solid black;
 }
 
-.descripcion{
-    background-color: black;
+a:link, a:active, a:visited {
+    text-decoration: none;
 }
-.text{
-    margin-left: 30px;
-    padding: 20px;
-}
-.text p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.pelis img{
-    width: 190px;
-    height: 190px;
-    padding: 10px;
-}
-.recomendadas{
-    margin-left: 30px;
-}
+
+
 @media only screen and (max-width: 385px){
    
     ul{

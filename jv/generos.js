@@ -1,7 +1,5 @@
 window.addEventListener("load", function(){ 
     
-    var api_key = `eb09954096929ff16616027732037e3`
-    
     fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=eb09954096929ff16616027732037e32&language=en-US`)
     .then(function (response) {
         return response.json()
@@ -11,17 +9,24 @@ window.addEventListener("load", function(){
         
         console.log(genero);
         
-        var texto = document.querySelector("#genero")
+        var texto = document.querySelector(`#genero`)
         
 
-        for (let i = 0; i < genero.length; i++) {
+        for (let i = 0; i < genero.genres.length; i++) {
             const element = genero.genres[i];
             
-           var palabra = `<p>${element.name}</p>`
+           var palabra = `<a href="detalles.html?type=genero&genero=${element.name}"><li class="card">
+           <div class="${element.name}  uk-card uk-card-hover uk-card-default uk-card-body">${element.name}</div>
+       </li></a>`
 
-        texto.innerHTML = palabra
+        texto.innerHTML += palabra
+
         }
         
+        
+
+
+
         
     })
 
@@ -29,6 +34,8 @@ window.addEventListener("load", function(){
         console.log(`El error fue: ${error}`);
     })
 
+
+    
 
 
 })

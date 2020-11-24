@@ -106,11 +106,9 @@ ul{
     transform: scale(1.08);
 }
 
-.serienav{
+.favnav{
     border-bottom: 2px solid black;
 }
-
-
 
 
 @media only screen and (max-width: 385px){
