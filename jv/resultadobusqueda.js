@@ -25,6 +25,13 @@ window.addEventListener("load", function(){
         for (let i = 0; i < data.results.length; i++) {
             const element = data.results[i];
 
+            resultados.innerHTML += `<a href="detalles.html?type=${element.media_type}&idShow=${element.id}">
+                                <li>
+                                    <img src= "${url}${element.poster_path}" alt="${element.name}"/>
+                                        <div class="uk-position-center uk-panel"><h1></h1></div>
+                                </li>
+                            </a>`
+        
         }
         
     })
