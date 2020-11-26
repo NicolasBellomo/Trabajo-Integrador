@@ -8,7 +8,7 @@ let storageJs =JSON.parse(storage)
 
 let favoritos = document.querySelector('.favoritos')
 storageJs.forEach(id =>{
-    fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=764e5562e5fed92cb370d453ac0ed8a3`)
+    fetch(``)
     .then(datos => datos.json())
     .then(respuesta=>{
         console.log(respuesta);
@@ -21,7 +21,7 @@ storageJs.forEach(id =>{
 })
 
 storageJs.forEach(id =>{
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=764e5562e5fed92cb370d453ac0ed8a3`)
+    fetch(``)
     .then(datos => datos.json())
     .then(respuesta=>{
         console.log(respuesta);
