@@ -87,6 +87,16 @@ a:link, a:active, a:visited {
 }
 
 
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer img{
+    width: 35px;
+  }
+  
+
 @media only screen and (max-width: 385px){
    
     ul{
