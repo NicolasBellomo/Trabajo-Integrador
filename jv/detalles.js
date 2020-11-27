@@ -272,7 +272,7 @@ window.addEventListener("load",function(){
       }
 //funcionalidad boton 
 
-    boton.addEventListener('onclick', function(){
+    boton.addEventListener('click', function(){
 
         console.log(favoritos)
 
