@@ -247,7 +247,51 @@ window.addEventListener("load",function(){
             break;
     }
 
-    
+    //traigo el id del url
+
+    var queryString2 = location.search
+    var queryStringObj2 = new URLSearchParams(queryString2);
+    var pelaId = queryStringObj2.get("idShow")
+
+    console.log(pelaId)
+
+    let storage = localStorage.getItem('favoritos')
+        console.log(storage);
+
+//si vacio, armo el array
+
+        if (storage == null) {
+            favoritos = [];
+          } else {
+            favoritos = JSON.parse(storage);
+          }
+
+        console.log(favoritos)
+
+    let boton = document.querySelector('.favs')                                                                                                                                                             
+
+    if (favoritos.includes(pelaId)) {
+        boton.innerHTML = `X Eliminar de favs`;
+      }
+//funcionalidad boton 
+
+    boton.addEventListener('onclick', function(){
+
+        console.log(favoritos)
+
+        if(!favoritos.includes(pelaId)){
+            favoritos.push(pelaId)
+
+        }else{
+            localStorage.removeItem(pelaId)
+        }
+
+        var infoStorage = JSON.stringify(favoritos);
+    localStorage.setItem("favoritos", infoStorage);
+
+     console.log(localStorage);
+        
+    })
 
     
 
