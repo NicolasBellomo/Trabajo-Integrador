@@ -9,10 +9,6 @@ window.addEventListener("load",function(){
     var generoElegido = queryStringObj.get("genero")
 
 
-    var tapa = document.querySelector(`.tapa`)
-    var line = document.querySelector(`.line`)
-    var text = document.querySelector(`.text`)
-    var pelis = document.querySelector(`.pelis`)
 
     switch (pelaElegida) {
         case `movie`:
@@ -49,11 +45,10 @@ window.addEventListener("load",function(){
             </div>
         </div>
         <div><h2>La gente tambien miro</h2></div>`
-
-
-
    
             detalle.innerHTML += peliAgregar
+
+        // links generos 
 
             var generosp = document.querySelector(`.generosp`)
 
@@ -64,6 +59,8 @@ window.addEventListener("load",function(){
                 <a href="detalles.html?type=genero&idShow=${element.id}">${element.name}</a>
                 `
             }
+
+            //relacionadas
 
             var pelas = document.querySelector("#related")
 
@@ -203,7 +200,7 @@ window.addEventListener("load",function(){
                         <a href="detalles.html?type=genero&idShow=${element.id}">${element.name}</a>
                         `
                     }
-
+//related
                     var seriesr = document.querySelector("#related")
 
             fetch(`https://api.themoviedb.org/3/tv/airing_today?api_key=eb09954096929ff16616027732037e32&language=en-US`)

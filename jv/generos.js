@@ -15,7 +15,7 @@ window.addEventListener("load", function(){
         for (let i = 0; i < genero.genres.length; i++) {
             const element = genero.genres[i];
             
-           var palabra = `<a href="detalles.html?type=genero&genero=${element.name}"><li class="card">
+           var palabra = `<a href="detalles.html?type=genero&idShow=${element.id}"><li class="card">
            <div class="${element.name}  uk-card uk-card-hover uk-card-default uk-card-body">${element.name}</div>
        </li></a>`
 
