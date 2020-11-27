@@ -11,12 +11,12 @@ window.addEventListener("load", function(){
     let link = `https://api.themoviedb.org/3/search/multi?api_key=eb09954096929ff16616027732037e32&language=en-US&query=${search}&page=1&include_adult=false`
     
     let resultados = document.querySelector('#resultados')
-    let titulo = document.querySelector(`.posta`)
+    let titulo = document.querySelector(`.posta`)//no se usa
     
     fetch(link)
     .then(function (respuestas){
         return respuestas.json()
-    })
+    }) //predeterminado
     
     .then(function(data){
         console.log(data);
